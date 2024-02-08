@@ -2,6 +2,13 @@
 <html>
   <head>
     <title>Grades</title>
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Grades/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/TopNavigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+
   </head>
   <body>
     <table width="100%">
@@ -9,129 +16,337 @@
         <tr>
           <!-- First Column - Kanbas Navigation Links -->
           <td valign="top">
-            <ul>
-                <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-                <li>
-                  <a href="#">Dashboard</a>
-                </li>
-                <li>
-                  <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
-                </li>
-                <li>
-                  <a href="#">Calendar</a>
-                </li>
-                <li><a href="#">Inbox</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Studio</a></li>
-                <li><a href="#">Commons</a></li>
-                <li><a href="#">Help</a></li>
-              </ul>
+            <ul class="wd-kanbas-navigation">
+              <li>
+                <a href="http://northeastern.edu"
+                  ><img
+                    src="/images/neu.png"
+                    width="26"
+                    height="20"
+                /></a>
+              </li>
+              <li>
+                <a href="/Kanbas/Account/Profile/screen.html"
+                  ><i class="fa fa-user" id="wd-color-white"></i>Account</a>
+              </li>
+              <li>
+                <a href="/Kanbas/Dashboard/screen.html"
+                  ><i class="fa fa-tachometer"></i>Dashboard</a>
+              </li>
+              <li class="wd-active">
+                <a href="/Kanbas/Courses/Home/screen.html"
+                  ><i class="fa fa-book"></i>Courses</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-calendar"></i> Calendar</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-inbox"></i> <br />Inbox</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-clock-o"></i> History</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-desktop"></i> <br />Studio</a>
+            </li>
+              <li>
+                <a href="#"><i class="fa fa-arrow-circle-o-right"></i> <br />Commons</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-question"></i> <br />Help</a>
+              </li>
+            </ul>
           </td>
           <!-- Second Column - Course Navigation Links -->
-          <td valign="top">
-            <ul>
-                <li><a href="/Kanbas/Courses/Home/screen.html"> Home</a></li>
-                <li><a href="#"> Modules</a></li>
-                <li><a href="#"> Piazza</a></li>
-                <li><a href="#"> Zoom Meetings</a></li>
-                <li><a href="/Kanbas/Courses/Assignments/screen.html"> Assignments</a></li>
-                <li><a href="#"> Quizzes</a></li>
-                <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
-                <li><a href="#"> People</a></li>
-                <li><a href="#"> Panopto Video</a></li>
-                <li><a href="#"> Discussions</a></li>
-                <li><a href="#"> Announcements</a></li>
-                <li><a href="#"> Pages</a></li>
-                <li><a href="#"> Files</a></li>
-                <li><a href="#"> Rubrics</a></li>
-                <li><a href="#"> Outcomes</a></li>
-                <li><a href="#"> Collaborations</a></li>
-                <li><a href="#"> Syllabus</a></li>
-                <li><a href="/Kanbas/Courses/Settings/CourseDetails/screen.html"> Settings</a></li>
-              </ul>
-          </td>
-          <!-- Third Column - Grades Screen -->
-          <td valign="top">
-            <!-- Filter options -->
-            <div style="display: flex">
-              <select>
-                <option>Gradebook</option>
-                <option>Change Gradebook View</option>
-                <option>Traditional Gradebook</option>
-                <option>Individual Gradebook</option>
-              </select>
-              <button>Import</button>
-              <select>
-                <option>Export</option>
-                <option>Export Current Gradebook View</option>
-                <option>Export Entire Gradebook</option>
-              </select>
-              <button>Configure</button>
+          <td width = "100%">
+            <div class = "course-top-navigation">
+              <a href="#"><i class="fa fa-bars"></i></a>
+              <a href="#">CS5610.36915.202430</a>
+              > Grades
+              <hr>
             </div>
-  
-            <!-- Student Name filter -->
-            <h3>Student Names</h3>
-            <input type="text" placeholder="Search Students" />
-  
-            <!-- Assignment Name filter -->
-            <h3>Assignment Names</h3>
-            <input type="text" placeholder="Search Assignments" />
-  
-            <br/>
-            <br/>
-  
-            <!-- Apply Filters button -->
-            <button>Apply Filters</button>
-  
-            <br /><br />
-  
-            <!-- Grades table -->
-            <table border="1" style="text-align: center">
-              <tr>
-                <th>Student Name</th>
-                <th>A1 Setup <br>Out of 100</th>
-                <th>A2 HTML <br>Out of 100</th>
-                <th>A3 CSS <br>Out of 100</th>
-                <th>A4 Bootstrap <br>Out of 100</th>
-              </tr>
-              <tr>
-                <td>Amy Santiago</td>
-                <td>95</td>
-                <td>
-                  <input type="number" max="100" min="0" value="97" style="width: 70%; text-align: center" />
-                </td>
-                <td>98</td>
-                <td>94</td>
-              </tr>
-              <tr>
-                <td>Jake Peralta</td>
-                <td>74</td>
-                <td>79</td>
-                <td>
-                  <input type="number" max="100" min="0" value="90" style="width: 70%; text-align: center" />
-                </td>
-                <td>82</td>
-              </tr>
-              <tr>
-                <td>Rosa Diaz</td>
-                <td>97</td>
-                <td>
-                  <input type="number" max="100" min="0" value="78" style="width: 70%; text-align: center" />
-                </td>
-                <td>75</td>
-                <td>88</td>
-              </tr>
-              <tr>
-                <td>Ray Holt</td>
-                <td>81</td>
-                <td>76</td>
-                <td>90</td>
-                <td>
-                  <input type="number" max="100" min="0" value="85" style="width: 70%; text-align: center" />
-                </td>
-              </tr>
-            </table>
+        
+            <table>
+              <tbody>
+                <tr>
+                  
+                  <td valign = "top">
+                    <ul class="wd-navigation">
+                      <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+                      <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
+                      <li><a href="#">Piazza</a></li>
+                      <li><a href="#">Zoom Meetings</a></li>
+                      <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
+                      <li><a href="#">Quizzes</a></li>
+                      <li   class="wd-active" ><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                      <li><a href="#">People</a></li>
+                      <li><a href="#">Panopto Video</a></li>
+                      <li><a href="#">Discussions</a></li>
+                      <li><a href="#">Announcements</a></li>
+                      <li><a href="#">Pages</a></li>
+                      <li><a href="#">Files</a></li>
+                      <li><a href="#">Rubrics</a></li>
+                      <li><a href="#">Outcomes</a></li>
+                      <li><a href="#">Collaborations</a></li>
+                      <li><a href="#">Syllabus</a></li>
+                      <li><a href="/Kanbas/Courses/Settings/CourseDetails/screen.html">Settings</a></li>
+                    </ul>
+                  </td>
+          <!-- Third Column - Grades Screen -->
+          <td valign="top" width = "100%">
+
+
+            <div class = "top-button-bar float-end">
+              <a href=""> <i class="fa fa-sign-in" aria-hidden="true"></i> Import</a>
+        
+              <a href=""> <i class="fa fa-sign-out" aria-hidden="true"></i> Export <i class="fa fa-angle-down"></i> </a>
+        
+              <a href=""><i class="fa fa-gear"></i></a>
+              
+            </div><br>
+            <hr>
+
+            <div class="row mb-3">
+              <div class="col-sm-6">
+                <div class="row mb-3">
+                  <div class="col text-start">
+                    <label for="assignment-group" class="form-label mb-0">Student Names</label>
+                  </div>  
+                </div>
+
+                <div class="row mb-3">
+                  <div class="col">
+                    <div class = "top-search">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <td valign="middle">
+                              <i class="fa fa-search"></i> 
+                            </td>
+                            <td width = 100%>
+                              <input type="text" class="form-control no-border" placeholder="Search Students">  
+                            </td>
+                            <td>
+                              <i class="fa fa-angle-down"></i>
+                            </td>
+
+                        </tbody>
+                      </table>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="row mb-3">
+                  <div class="col text-start">
+                    <label for="assignment-group" class="form-label mb-0">Assignment Names</label>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <div class="col">
+                    <div class = "top-search">
+          
+                      <table>
+                        <tbody>
+                          <tr>
+                            <td valign="middle">
+                              <i class="fa fa-search"></i> 
+                            </td>
+                            <td width = 100%>
+                              <input type="text" class="form-control no-border" placeholder="Search Assignments">  
+                            </td>
+                            <td>
+                              <i class="fa fa-angle-down"></i>
+                            </td>
+
+                        </tbody>
+                      </table>
+                      
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col filter-button">
+                <a href="#"><i class="fa fa-filter"></i> Apply Filters</a>
+              </div>
+            </div>
+            
+            <div class="table-responsive">
+              <table class="table table-striped table-bordered">
+                  <thead>
+                      <tr>
+                          <th> Student Name </th>
+                          <th width = "15%">A1 SETUP</th>
+                          <th width = "15%">A2 HTML</th>
+                          <th width = "15%">A3 CSS</th>
+                          <th width = "15%">A4 JAVASCRIPT</th>
+                          <th width = "15%">A4 REACT</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>Student 1</td>
+                          <td>100%</td>
+                          <td>100%</td>
+                          <td>100%</td>
+                          <td>100%</td>
+                          <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td>Student 2</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td>Student 3</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td>Student 4</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td><input type="number" max="100" min="0" placeholder="95%" class="form-control" /></td>
+                        <td>100%</td>
+                        <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td>Student 5</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td>Student 6</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td>Student 7</td>
+                        <td><input type="number" max="100" min="0" placeholder="90%" class="form-control" /></td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td>Student 8</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td>Student 9</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td>Student 10</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td>Student 11</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td>Student 12</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td>Student 13</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td><input type="number" max="100" min="0" placeholder="97%" class="form-control" /></td>
+                      </tr>
+                      <tr>
+                        <td>Student 14</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td>Student 15</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td>Student 16</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td>Student 17</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td>Student 18</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+          
+          </div>
           </td>
+          </tr>
+      </tbody>
+    </table>
+  </td>
+</tr>
+</tbody>
+</table>        
         </tr>
       </tbody>
     </table>
