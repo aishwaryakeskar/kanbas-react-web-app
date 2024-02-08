@@ -71,7 +71,7 @@ form > div > div > a.red {
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 200px;
+    left: 100px;
   }
 
   .df-background-lightgray {
