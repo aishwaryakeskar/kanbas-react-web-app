@@ -1,0 +1,22 @@
+.spacing {
+    margin-left: 10%;
+    max-width:80%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px; 
+  }
+  
+.card-container .col {
+    max-width: 200px;
+    margin: 0 auto;
+    margin-bottom: 30px; 
+  }
+
+@media (max-width: 600px) {
+    .wd-kanbas-navigation {
+      display: none;
+    }
+  }
