@@ -14,11 +14,11 @@ function Dashboard() {
                 <img src={`/images/${course.image}`} className="card-img-top"
                      style={{ height: 150 }}/>
                 <div className="card-body">
-                  <Link className="card-title" to={`/Kanbas/Courses/${course._id}/Home`}
+                  <Link className="card-title" to={`/Kanbas/Courses/${course._id}`}
                     style={{ textDecoration: "none", color: "navy", fontWeight: "bold" }}>
                     {course.name} </Link>
                   <p className="card-text">{course.name}</p>
-                  <Link to={`/Kanbas/Courses/${course._id}/Home`} className="btn btn-primary">
+                  <Link to={`/Kanbas/Courses/${course._id}`} className="btn btn-primary">
                     Go </Link>
                 </div>
               </div>

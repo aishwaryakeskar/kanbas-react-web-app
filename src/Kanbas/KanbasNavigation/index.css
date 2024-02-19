@@ -15,7 +15,6 @@ list-style: none;
 padding: 0px;
 margin: 0px;
 width: 84px;
-height: 100vh;
 }
 .wd-kanbas-navigation li {
 padding: 10px;
@@ -37,4 +36,10 @@ text-decoration: none;
 color: red;
 font-size: 2em;
 margin-bottom: 5px;
+}
+
+@media (max-width: 600px) {
+    .wd-kanbas-navigation {
+      display: none;
+    }
 }
