@@ -1,0 +1,42 @@
+.kanbas-status-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+
+  .kanbas-hyperlink {
+    text-decoration: none;
+    color: #d41a2d;
+  }
+
+  .kanbas-red {
+    color: #d41a2d;
+  }
+
+  .kanbas-column {
+    float: left;
+    margin: 8px;
+  }
+
+  .kanbas-item-width-250 {
+    width: 250px;
+  }
+
+  .kanbas-no-underline {
+    text-decoration: none;
+  }
+
+  .kanbas-text-left {
+    text-align: left;
+  }
+
+  .wd-flex-row-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .wd-module-list {
+    flex: 1; 
+  }
+  

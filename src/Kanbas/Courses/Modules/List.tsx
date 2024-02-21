@@ -12,12 +12,12 @@ function ModuleList() {
     <>
       <ModuleButtons/>
       <br/><br/>
-      <ul className="list-group wd-modules">
+      <ul className="list-group">
         {modulesList.map((module) => (
           <li
-            className="list-group-item list-group-item-secondary py-2 my-3"
+            className="list-group-item list-group-item-secondary py-0 px-0 my-3"
             onClick={() => setSelectedModule(module)}>
-            <div>
+            <div className="px-3 py-2">
               <FaEllipsisV className="me-2" />
               {module.name}
               <span className="float-end">
