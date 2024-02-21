@@ -1,0 +1,10 @@
+
+.kanbas-assignment-border {
+  border-left-color: green;
+  border-left-width: 4px;
+}
+
+.kanbas-save-profile {
+  color: white;
+  background-color: #d41a2d;
+}
