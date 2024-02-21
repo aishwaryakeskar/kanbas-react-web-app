@@ -1,0 +1,77 @@
+.table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .table th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    background-color: #f2f2f2; 
+  }
+  
+  .table td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .table tbody tr:nth-child(even) td {
+    background-color: #f2f2f2;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 20px; 
+  }
+  
+  .search-inputs {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .filter-button-container {
+    margin-top: 10px;
+  }
+  
+  .filter-button {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .filter-button:hover {
+    background-color: #0056b3;
+  }
+
+  
+  
+  .top-button-bar {
+    padding-right: 20px;
+  }
+  
+  .top-button-bar > a {
+    margin: 0 4px 0 4px;
+    padding: 5px;
+    border: 1px solid black;
+    display: inline-flex;
+    background-color: #e7e7e7;
+    color: black;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .top-button-bar > a.red {
+    background-color: red;
+  }
+  
+  .top-button-bar > a > i {
+    padding-right: 3px;
+    padding-left: 3px;
+  }
+  
+  
