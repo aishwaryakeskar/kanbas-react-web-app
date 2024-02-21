@@ -26,6 +26,7 @@ import {
             }}></FaCircleCheck>
           Published
         </button>
+        <br/>
 
         <button type="submit" className="btn btn-light kanbas-item-width-250 mb-1">
             <div className="ms-2 float-start">

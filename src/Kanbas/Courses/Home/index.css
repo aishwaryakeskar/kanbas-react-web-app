@@ -39,4 +39,8 @@
   .wd-module-list {
     flex: 1; 
   }
+
+  .kanbas-edit-column {
+    width: 72%;
+  }
   
