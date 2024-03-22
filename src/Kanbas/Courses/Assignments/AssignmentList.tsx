@@ -1,13 +1,20 @@
 import { Link, useParams } from "react-router-dom";
-import { assignments } from "../../Database";
 import { FaEllipsisVertical, FaPlus, FaFilePen, FaRegCircleCheck } from "react-icons/fa6";
 import './index.css'
+import { useSelector, useDispatch } from "react-redux";
+import {
+  deleteAssignment,
+  setAssignment,
+} from "./assignmentsReducer";
+import { KanbasState } from "../../store";
 
 function AssignmentList() {
   const { courseId } = useParams();
-  const courseAssignments = assignments.filter(
-    (assignment) => assignment.course === courseId
-  );
+  const courseAssignments = useSelector((state: KanbasState) => 
+  state.assignmentsReducer.assignments);
+const assignment = useSelector((state: KanbasState) => 
+  state.assignmentsReducer.assignment);
+const dispatch = useDispatch();
 
   return (
     <div>
@@ -23,7 +30,9 @@ function AssignmentList() {
           </div>
         </li>
 
-        {courseAssignments.map((assignment) => (
+        {courseAssignments.filter(
+          (assignment) => assignment.course === courseId
+          ).map((assignment) => (
           <li
             key={assignment._id}
             className="list-group-item py-2 kanbas-assignment-border"
@@ -39,6 +48,16 @@ function AssignmentList() {
                   {assignment.title}
                 </Link>
               </h5>
+              <div className="float-end">
+              <button className="btn btn-light m-2"
+                  onClick={() => dispatch(setAssignment(assignment))}>
+                  Edit
+                </button>
+                <button className="btn btn-light"
+                  onClick={() => dispatch(deleteAssignment(assignment._id))}>
+                  Delete
+                </button>
+              </div>
             </div>
           </li>
         ))}
